@@ -1,6 +1,9 @@
 ---
 # vars file for kops
 kops_source_bin: kops-{{kops_platform}}
+
+# https://github.com/kubernetes/kops/releases/download/1.6.2/kops-darwin-amd64
+# https://github.com/kubernetes/kops/releases/download/1.6.2/kops-linux-amd64
 kops_url: '{{kops_mirror}}/{{kops_ver}}/{{kops_source_bin}}'
 
 kops_subdir: kops-v{{kops_ver}}
