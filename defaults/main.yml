@@ -1,6 +1,6 @@
 ---
 # defaults file for kops
-kops_ver: '1.6.2'
+kops_ver: '1.7.0'
 kops_platform: linux-amd64
 kops_mirror: https://github.com/kubernetes/kops/releases/download
 kops_checksums:
