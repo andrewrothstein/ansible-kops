@@ -4,7 +4,7 @@ kops_ver: '1.7.0'
 kops_platform: linux-amd64
 kops_mirror: https://github.com/kubernetes/kops/releases/download
 kops_checksums:
-  darwin-amd64: sha256:1edd744c05441ee19878c194edd68d188cc7a8c939d874537d72977c3e43dd9f
-  linux-amd64: sha256:4bdc61685a2a359318830d8e4cd230ff90a8f74d43398ea9b631d9ab252f98b5
+  darwin-amd64: sha256:e32ba974138806b5c0a02ceb12f2de78ad4e69eac13908885fde36f09d01109b
+  linux-amd64: sha256:3b65f7c456238457d8246e617e3a9dac4d95d1f4d3f395a1d9e02e9dfd00d839
 
 kops_install_dir: /usr/local/bin
