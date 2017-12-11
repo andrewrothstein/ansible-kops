@@ -9,3 +9,4 @@ kops_fq_subdir: '{{kops_install_dir}}/{{kops_subdir}}'
 
 kops_install_target: '{{kops_fq_subdir}}/kops'
 kops_link_target: '{{kops_install_dir}}/kops'
+kops_checksum: '{{kops_checksums[kops_ver][kops_platform]}}'

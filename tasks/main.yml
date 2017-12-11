@@ -13,6 +13,7 @@
   get_url:
     url: '{{kops_url}}'
     dest: '{{kops_install_target}}'
+    checksum: '{{kops_checksum}}'
     mode: 0755
 
 - name: link...
