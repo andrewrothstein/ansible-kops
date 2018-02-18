@@ -1,9 +1,12 @@
 ---
 # defaults file for kops
-kops_ver: '1.8.0'
+kops_ver: '1.8.1'
 kops_platform: linux-amd64
 kops_mirror: https://github.com/kubernetes/kops/releases/download
 kops_checksums:
+  '1.8.1':
+    darwin-amd64: sha256:f9ae5212f5ab29541a0d55a6bb6a842fa97e7c2fb2ceb076875a130e0b16ccb5
+    linux-amd64:  sha256:34934e7d77d6afa4e90b142646fd8638cf8d3d7933be98856b9e384072a8d213
   '1.8.0':
     darwin-amd64: sha256:5e94b7b03817f2820948e2d5950debc18e6968c511e4dccc4c40dfc99536d144
     linux-amd64:  sha256:57d400a10f3e2e30efbcf9851d0f84ee3b9a58059674df33a438b61dca6adebf
