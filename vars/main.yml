@@ -1,12 +1,12 @@
 ---
 # vars file for kops
-kops_source_bin: kops-{{kops_platform}}
+kops_source_bin: kops-{{ kops_platform }}
 
-kops_url: '{{kops_mirror}}/{{kops_ver}}/{{kops_source_bin}}'
+kops_url: '{{ kops_mirror }}/{{ kops_ver }}/{{ kops_source_bin }}'
 
-kops_subdir: kops-v{{kops_ver}}
-kops_fq_subdir: '{{kops_install_dir}}/{{kops_subdir}}'
+kops_subdir: kops-v{{ kops_ver }}
+kops_fq_subdir: '{{ kops_install_dir }}/{{ kops_subdir }}'
 
-kops_install_target: '{{kops_fq_subdir}}/kops'
-kops_link_target: '{{kops_install_dir}}/kops'
-kops_checksum: '{{kops_checksums[kops_ver][kops_platform]}}'
+kops_install_target: '{{ kops_fq_subdir }}/kops'
+kops_link_target: '{{ kops_install_dir }}/kops'
+kops_checksum: '{{ kops_checksums[kops_ver][kops_platform] }}'

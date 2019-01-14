@@ -3,7 +3,7 @@
   become: yes
   become_user: root
   file:
-    path: '{{kops_fq_subdir}}'
+    path: '{{ kops_fq_subdir }}'
     state: directory
     mode: 0755
 
@@ -11,15 +11,15 @@
   become: yes
   become_user: root
   get_url:
-    url: '{{kops_url}}'
-    dest: '{{kops_install_target}}'
-    checksum: '{{kops_checksum}}'
+    url: '{{ kops_url }}'
+    dest: '{{ kops_install_target }}'
+    checksum: '{{ kops_checksum }}'
     mode: 0755
 
 - name: link...
   become: yes
   become_user: root
   file:
-    src: '{{kops_install_target}}'
-    dest: '{{kops_link_target}}'
+    src: '{{ kops_install_target }}'
+    dest: '{{ kops_link_target }}'
     state: link
