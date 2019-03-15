@@ -37,5 +37,9 @@ kops_checksums:
     linux-amd64: sha1:c4dfcb3f2b76f39b9b4fa3f784f4154077453d09
     darwin-amd64: sha1:ed09affd69e88c04ac1d5488e566289f78418217
     windows-amd64: sha1:3f70592b89e754f91f90dba5154d68ee6ac8308e
+  '1.11.1':
+    linux-amd64: sha1:11981af52b86b6bbc0cbbd568c4a52d42fc67ec8
+    darwin-amd64: sha1:b7090dba98a0455ade8984a939d5bfb773f75dab
+    windows-amd64: sha1:63be540e8b42ecbb1ba05ea39bf86a9885dfdecd
 
 kops_install_dir: /usr/local/bin

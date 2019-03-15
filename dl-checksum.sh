@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=1.11.0
+VER=1.11.1
 DIR=~/Downloads
 MIRROR=https://github.com/kubernetes/kops/releases/download
 
