@@ -1,16 +1,16 @@
 #!/usr/bin/env sh
-VER=1.13.0
+VER=1.13.1
 DIR=~/Downloads
 MIRROR=https://github.com/kubernetes/kops/releases/download
 
 dl()
 {
-    OS=$1
-    ARCH=$2
-    PLATFORM=${OS}-${ARCH}
-    URL=$MIRROR/$VER/kops-$PLATFORM-sha1
-    printf "    # %s\n" $URL
-    printf "    %s: sha1:%s\n" $PLATFORM `curl -SsL $URL`
+    os=$1
+    arch=$2
+    platform=${os}-${arch}
+    url=$MIRROR/$VER/kops-$platform-sha1
+    printf "    # %s\n" $url
+    printf "    %s: sha1:%s\n" $platform `curl -SsL $url`
 }
 
 printf "  '%s':\n" $VER
