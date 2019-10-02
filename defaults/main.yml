@@ -1,51 +1,63 @@
 ---
 # defaults file for kops
-kops_ver: '1.13.1'
+kops_ver: '1.13.2'
 kops_platform: linux-amd64
 kops_mirror: https://github.com/kubernetes/kops/releases/download
 kops_install_dir: /usr/local/bin
 
 kops_checksums:
-  '1.8.1':
-    darwin-amd64: sha256:f9ae5212f5ab29541a0d55a6bb6a842fa97e7c2fb2ceb076875a130e0b16ccb5
-    linux-amd64:  sha256:34934e7d77d6afa4e90b142646fd8638cf8d3d7933be98856b9e384072a8d213
   '1.8.0':
-    darwin-amd64: sha256:5e94b7b03817f2820948e2d5950debc18e6968c511e4dccc4c40dfc99536d144
-    linux-amd64:  sha256:57d400a10f3e2e30efbcf9851d0f84ee3b9a58059674df33a438b61dca6adebf
-  '1.7.0':
-    darwin-amd64: sha256:e32ba974138806b5c0a02ceb12f2de78ad4e69eac13908885fde36f09d01109b
-    linux-amd64: sha256:3b65f7c456238457d8246e617e3a9dac4d95d1f4d3f395a1d9e02e9dfd00d839
+    # https://github.com/kubernetes/kops/releases/download/1.8.0/kops-linux-amd64-sha1
+    linux-amd64: sha1:c19eb3cf0357bb5469636302ee56fe19ac5b5e30
+    # https://github.com/kubernetes/kops/releases/download/1.8.0/kops-darwin-amd64-sha1
+    darwin-amd64: sha1:1aac391f2710dac5d596c8b586f446067970f188
+  '1.8.1':
+    # https://github.com/kubernetes/kops/releases/download/1.8.1/kops-linux-amd64-sha1
+    linux-amd64: sha1:3f806f914d8bf2a0b9b3c6785689257b7aadcd17
+    # https://github.com/kubernetes/kops/releases/download/1.8.1/kops-darwin-amd64-sha1
+    darwin-amd64: sha1:da5811d351beea647c12083f2249bf5824da3ea0
   '1.9.0':
-    # curl -sSL https://github.com/kubernetes/kops/releases/download/1.9.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:c62c9732e8453176855d6db9bf8ab01443890d47
-    # curl -sSL https://github.com/kubernetes/kops/releases/download/1.9.0/kops-linux-amd64-sha1
+    # https://github.com/kubernetes/kops/releases/download/1.9.0/kops-linux-amd64-sha1
     linux-amd64: sha1:972cf3666e68218dcbf1604d67adacc3c096d6ee
+    # https://github.com/kubernetes/kops/releases/download/1.9.0/kops-darwin-amd64-sha1
+    darwin-amd64: sha1:c62c9732e8453176855d6db9bf8ab01443890d47
   '1.9.1':
-    # curl -sSL https://github.com/kubernetes/kops/releases/download/1.9.1/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:df7f8e99125e193099dab07dd5d1fe949f3e8567
-    # curl -sSL https://github.com/kubernetes/kops/releases/download/1.9.1/kops-linux-amd64-sha1
+    # https://github.com/kubernetes/kops/releases/download/1.9.1/kops-linux-amd64-sha1
     linux-amd64: sha1:9aeb7cbf7e6d3250716faa62bd33d9735949fdda
+    # https://github.com/kubernetes/kops/releases/download/1.9.1/kops-darwin-amd64-sha1
+    darwin-amd64: sha1:df7f8e99125e193099dab07dd5d1fe949f3e8567
   '1.9.2':
-    # curl -sSL https://github.com/kubernetes/kops/releases/download/1.9.2/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:29874e867fdc3dc27b99bfd6258780af3f0bd42a
-    # curl -sSL https://github.com/kubernetes/kops/releases/download/1.9.2/kops-linux-amd64-sha1
+    # https://github.com/kubernetes/kops/releases/download/1.9.2/kops-linux-amd64-sha1
     linux-amd64: sha1:e772b6d03290dc3696346a3b802ff5ffd1ff5eee
+    # https://github.com/kubernetes/kops/releases/download/1.9.2/kops-darwin-amd64-sha1
+    darwin-amd64: sha1:29874e867fdc3dc27b99bfd6258780af3f0bd42a
   '1.10.0':
-    # curl -sSL https://github.com/kubernetes/kops/releases/download/1.10.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:a2ced9b74c826cf65a8661c51936ea40207b2d8c
-    # curl -sSL https://github.com/kubernetes/kops/releases/download/1.10.0/kops-linux-amd64-sha1
+    # https://github.com/kubernetes/kops/releases/download/1.10.0/kops-linux-amd64-sha1
     linux-amd64: sha1:aaa34a80e7e24104fd90f9c2571b37fa7c0b3284
+    # https://github.com/kubernetes/kops/releases/download/1.10.0/kops-darwin-amd64-sha1
+    darwin-amd64: sha1:a2ced9b74c826cf65a8661c51936ea40207b2d8c
+    # https://github.com/kubernetes/kops/releases/download/1.10.0/kops-windows-amd64-sha1
+    windows-amd64: sha1:77f2a103b30d3dc20a1490424dff3c42f686f95e
   '1.11.0':
+    # https://github.com/kubernetes/kops/releases/download/1.11.0/kops-linux-amd64-sha1
     linux-amd64: sha1:c4dfcb3f2b76f39b9b4fa3f784f4154077453d09
+    # https://github.com/kubernetes/kops/releases/download/1.11.0/kops-darwin-amd64-sha1
     darwin-amd64: sha1:ed09affd69e88c04ac1d5488e566289f78418217
+    # https://github.com/kubernetes/kops/releases/download/1.11.0/kops-windows-amd64-sha1
     windows-amd64: sha1:3f70592b89e754f91f90dba5154d68ee6ac8308e
   '1.11.1':
+    # https://github.com/kubernetes/kops/releases/download/1.11.1/kops-linux-amd64-sha1
     linux-amd64: sha1:11981af52b86b6bbc0cbbd568c4a52d42fc67ec8
+    # https://github.com/kubernetes/kops/releases/download/1.11.1/kops-darwin-amd64-sha1
     darwin-amd64: sha1:b7090dba98a0455ade8984a939d5bfb773f75dab
+    # https://github.com/kubernetes/kops/releases/download/1.11.1/kops-windows-amd64-sha1
     windows-amd64: sha1:63be540e8b42ecbb1ba05ea39bf86a9885dfdecd
   '1.12.0':
+    # https://github.com/kubernetes/kops/releases/download/1.12.0/kops-linux-amd64-sha1
     linux-amd64: sha1:3d00bf8e7d992dbe2c771b5fe246e5dce5b7f036
+    # https://github.com/kubernetes/kops/releases/download/1.12.0/kops-darwin-amd64-sha1
     darwin-amd64: sha1:3e48926d573ede9870f18b91d317b9fd2a6b37ee
+    # https://github.com/kubernetes/kops/releases/download/1.12.0/kops-windows-amd64-sha1
     windows-amd64: sha1:ca11c338eec89a6cdead92d9d24992dde2106e0c
   '1.12.1':
     # https://github.com/kubernetes/kops/releases/download/1.12.1/kops-linux-amd64-sha1
@@ -75,3 +87,10 @@ kops_checksums:
     darwin-amd64: sha1:2ba3fc9e1d450bba4ffce5376d3e6b587544ed8b
     # https://github.com/kubernetes/kops/releases/download/1.13.1/kops-windows-amd64-sha1
     windows-amd64: sha1:55cba8e033a101b083dfd605460544d2069a903c
+  '1.13.2':
+    # https://github.com/kubernetes/kops/releases/download/1.13.2/kops-linux-amd64-sha1
+    linux-amd64: sha1:e8ebae8a5589cc910e1c478182e0e8de9e784410
+    # https://github.com/kubernetes/kops/releases/download/1.13.2/kops-darwin-amd64-sha1
+    darwin-amd64: sha1:e899ef0d8cb239ab9036ccbc12e5fad6307e45c3
+    # https://github.com/kubernetes/kops/releases/download/1.13.2/kops-windows-amd64-sha1
+    windows-amd64: sha1:d5735fdc07b9275f8a32de4866fd85f5bf169cb4
