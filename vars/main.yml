@@ -1,5 +1,6 @@
 ---
 # vars file for kops
+kops_platform: '{{ kops_os }}-{{ kops_arch }}'
 kops_source_bin: kops-{{ kops_platform }}
 
 kops_url: '{{ kops_mirror }}/{{ kops_ver }}/{{ kops_source_bin }}'
