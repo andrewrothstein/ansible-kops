@@ -15,10 +15,10 @@ dl()
 dl_ver()
 {
     local ver=$1
-    printf "  '%s':\n" $ver
+    printf "  %s:\n" $ver
     dl $ver linux amd64
     dl $ver darwin amd64
     dl $ver windows amd64
 }
 
-dl_ver ${1:-1.15.0}
+dl_ver ${1:-v1.15.1}
