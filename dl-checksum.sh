@@ -7,7 +7,7 @@ dl()
     local os=$2
     local arch=$3
     local platform="${os}-${arch}"
-    local url=$MIRROR/$ver/kops-$platform-sha256
+    local url=$MIRROR/$ver/kops-$platform.sha256
     printf "    # %s\n" $url
     printf "    %s: sha256:%s\n" $platform `curl -SsL $url`
 }
@@ -21,4 +21,4 @@ dl_ver()
     dl $ver windows amd64
 }
 
-dl_ver ${1:-v1.17.1}
+dl_ver ${1:-v1.18.0}
