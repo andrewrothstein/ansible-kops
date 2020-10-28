@@ -1,5 +1,5 @@
 ---
-- name: make install dir....
+- name: mkdir {{ kops_fq_subdir }}
   become: yes
   become_user: root
   file:
@@ -7,7 +7,7 @@
     state: directory
     mode: 0755
 
-- name: download...
+- name: downloading {{ kops_url }} to {{ kops_install_target }}
   become: yes
   become_user: root
   get_url:
@@ -16,7 +16,7 @@
     checksum: '{{ kops_checksum }}'
     mode: 0755
 
-- name: link...
+- name: linking {{ kops_link_target }} to {{ kops_install_target }}
   become: yes
   become_user: root
   file:
