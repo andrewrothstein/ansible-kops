@@ -1,121 +1,12 @@
 ---
 # defaults file for kops
-kops_ver: v1.18.3
+kops_ver: v1.19.0
 kops_os: linux
 kops_arch: amd64
 kops_mirror: https://github.com/kubernetes/kops/releases/download
 kops_install_dir: /usr/local/bin
 
 kops_checksums:
-  '1.8.0':
-    # https://github.com/kubernetes/kops/releases/download/1.8.0/kops-linux-amd64-sha1
-    linux-amd64: sha1:c19eb3cf0357bb5469636302ee56fe19ac5b5e30
-    # https://github.com/kubernetes/kops/releases/download/1.8.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:1aac391f2710dac5d596c8b586f446067970f188
-  '1.8.1':
-    # https://github.com/kubernetes/kops/releases/download/1.8.1/kops-linux-amd64-sha1
-    linux-amd64: sha1:3f806f914d8bf2a0b9b3c6785689257b7aadcd17
-    # https://github.com/kubernetes/kops/releases/download/1.8.1/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:da5811d351beea647c12083f2249bf5824da3ea0
-  '1.9.0':
-    # https://github.com/kubernetes/kops/releases/download/1.9.0/kops-linux-amd64-sha1
-    linux-amd64: sha1:972cf3666e68218dcbf1604d67adacc3c096d6ee
-    # https://github.com/kubernetes/kops/releases/download/1.9.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:c62c9732e8453176855d6db9bf8ab01443890d47
-  '1.9.1':
-    # https://github.com/kubernetes/kops/releases/download/1.9.1/kops-linux-amd64-sha1
-    linux-amd64: sha1:9aeb7cbf7e6d3250716faa62bd33d9735949fdda
-    # https://github.com/kubernetes/kops/releases/download/1.9.1/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:df7f8e99125e193099dab07dd5d1fe949f3e8567
-  '1.9.2':
-    # https://github.com/kubernetes/kops/releases/download/1.9.2/kops-linux-amd64-sha1
-    linux-amd64: sha1:e772b6d03290dc3696346a3b802ff5ffd1ff5eee
-    # https://github.com/kubernetes/kops/releases/download/1.9.2/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:29874e867fdc3dc27b99bfd6258780af3f0bd42a
-  '1.10.0':
-    # https://github.com/kubernetes/kops/releases/download/1.10.0/kops-linux-amd64-sha1
-    linux-amd64: sha1:aaa34a80e7e24104fd90f9c2571b37fa7c0b3284
-    # https://github.com/kubernetes/kops/releases/download/1.10.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:a2ced9b74c826cf65a8661c51936ea40207b2d8c
-    # https://github.com/kubernetes/kops/releases/download/1.10.0/kops-windows-amd64-sha1
-    windows-amd64: sha1:77f2a103b30d3dc20a1490424dff3c42f686f95e
-  '1.11.0':
-    # https://github.com/kubernetes/kops/releases/download/1.11.0/kops-linux-amd64-sha1
-    linux-amd64: sha1:c4dfcb3f2b76f39b9b4fa3f784f4154077453d09
-    # https://github.com/kubernetes/kops/releases/download/1.11.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:ed09affd69e88c04ac1d5488e566289f78418217
-    # https://github.com/kubernetes/kops/releases/download/1.11.0/kops-windows-amd64-sha1
-    windows-amd64: sha1:3f70592b89e754f91f90dba5154d68ee6ac8308e
-  '1.11.1':
-    # https://github.com/kubernetes/kops/releases/download/1.11.1/kops-linux-amd64-sha1
-    linux-amd64: sha1:11981af52b86b6bbc0cbbd568c4a52d42fc67ec8
-    # https://github.com/kubernetes/kops/releases/download/1.11.1/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:b7090dba98a0455ade8984a939d5bfb773f75dab
-    # https://github.com/kubernetes/kops/releases/download/1.11.1/kops-windows-amd64-sha1
-    windows-amd64: sha1:63be540e8b42ecbb1ba05ea39bf86a9885dfdecd
-  '1.12.0':
-    # https://github.com/kubernetes/kops/releases/download/1.12.0/kops-linux-amd64-sha1
-    linux-amd64: sha1:3d00bf8e7d992dbe2c771b5fe246e5dce5b7f036
-    # https://github.com/kubernetes/kops/releases/download/1.12.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:3e48926d573ede9870f18b91d317b9fd2a6b37ee
-    # https://github.com/kubernetes/kops/releases/download/1.12.0/kops-windows-amd64-sha1
-    windows-amd64: sha1:ca11c338eec89a6cdead92d9d24992dde2106e0c
-  '1.12.1':
-    # https://github.com/kubernetes/kops/releases/download/1.12.1/kops-linux-amd64-sha1
-    linux-amd64: sha1:c8d5a187d72e0564ab7f2777fe9620d925664873
-    # https://github.com/kubernetes/kops/releases/download/1.12.1/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:1229543647d3a3592d94bf676e8e9c6793351391
-    # https://github.com/kubernetes/kops/releases/download/1.12.1/kops-windows-amd64-sha1
-    windows-amd64: sha1:0026a18f154ada46d196f35aef291430edf38b23
-  '1.12.2':
-    # https://github.com/kubernetes/kops/releases/download/1.12.2/kops-linux-amd64-sha1
-    linux-amd64: sha1:9f2ec112d8100b5e9a791d92ae7421ed64c7707f
-    # https://github.com/kubernetes/kops/releases/download/1.12.2/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:377e6c7579218fce5f84143340803a0cdc107567
-    # https://github.com/kubernetes/kops/releases/download/1.12.2/kops-windows-amd64-sha1
-    windows-amd64: sha1:460f9368e438e1a6e7f7d11c9d779144b4a9c5d9
-  '1.13.0':
-    # https://github.com/kubernetes/kops/releases/download/1.13.0/kops-linux-amd64-sha1
-    linux-amd64: sha1:5b64049c38152720d695ceed0fce9d6592ddf0c1
-    # https://github.com/kubernetes/kops/releases/download/1.13.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:8461ab2af31655edb129cafa8217bb7f73374aa0
-    # https://github.com/kubernetes/kops/releases/download/1.13.0/kops-windows-amd64-sha1
-    windows-amd64: sha1:df939a82b25d9304062f771fe048fc0b8f3ce4af
-  '1.13.1':
-    # https://github.com/kubernetes/kops/releases/download/1.13.1/kops-linux-amd64-sha1
-    linux-amd64: sha1:3a8cff795132dda4af3d519d834523306cb087d3
-    # https://github.com/kubernetes/kops/releases/download/1.13.1/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:2ba3fc9e1d450bba4ffce5376d3e6b587544ed8b
-    # https://github.com/kubernetes/kops/releases/download/1.13.1/kops-windows-amd64-sha1
-    windows-amd64: sha1:55cba8e033a101b083dfd605460544d2069a903c
-  '1.13.2':
-    # https://github.com/kubernetes/kops/releases/download/1.13.2/kops-linux-amd64-sha1
-    linux-amd64: sha1:e8ebae8a5589cc910e1c478182e0e8de9e784410
-    # https://github.com/kubernetes/kops/releases/download/1.13.2/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:e899ef0d8cb239ab9036ccbc12e5fad6307e45c3
-    # https://github.com/kubernetes/kops/releases/download/1.13.2/kops-windows-amd64-sha1
-    windows-amd64: sha1:d5735fdc07b9275f8a32de4866fd85f5bf169cb4
-  '1.14.0':
-    # https://github.com/kubernetes/kops/releases/download/1.14.0/kops-linux-amd64-sha1
-    linux-amd64: sha1:a78c9a5f336f42aae5c51106454275ef41e5f32d
-    # https://github.com/kubernetes/kops/releases/download/1.14.0/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:02f5cf115943e58afa24f3b81f42050b7dca7e15
-    # https://github.com/kubernetes/kops/releases/download/1.14.0/kops-windows-amd64-sha1
-    windows-amd64: sha1:466ab546ca4fd28ab4e7e29bb542f4bb3ffd483d
-  '1.14.1':
-    # https://github.com/kubernetes/kops/releases/download/1.14.1/kops-linux-amd64-sha1
-    linux-amd64: sha1:16962355e358b3a9341007bb3402486fcbe4a2e9
-    # https://github.com/kubernetes/kops/releases/download/1.14.1/kops-darwin-amd64-sha1
-    darwin-amd64: sha1:174c109f415630794aa8c6d49f2d0217b33fca93
-    # https://github.com/kubernetes/kops/releases/download/1.14.1/kops-windows-amd64-sha1
-    windows-amd64: sha1:91bba48e22e23b621a8402b093752ab7a5e526bd
-  '1.15.0':
-    # https://github.com/kubernetes/kops/releases/download/1.15.0/kops-linux-amd64-sha256
-    linux-amd64: sha256:dfa3fd493a1974103648a3398ea0e7b133082e3dca7fd892be0ead69c6228475
-    # https://github.com/kubernetes/kops/releases/download/1.15.0/kops-darwin-amd64-sha256
-    darwin-amd64: sha256:d5d1310bfd81292916bd858e43781ab2abbd6d5b56c185ba3a6b194056191816
-    # https://github.com/kubernetes/kops/releases/download/1.15.0/kops-windows-amd64-sha256
-    windows-amd64: sha256:52d0adbeade7a21ebfedaae0f04432ac5223fffcd34d512add5de23d70d93dbe
   v1.15.1:
     # https://github.com/kubernetes/kops/releases/download/v1.15.1/kops-linux-amd64-sha256
     linux-amd64: sha256:b1f91bd3d97e00a2753a1f2c45366fb2e79d3dcb7d19692a0a8ee38bfe0229a6
@@ -193,3 +84,10 @@ kops_checksums:
     darwin-amd64: sha256:11e4a0248117e24793fc6256f365b02b00aa07bd583aef7bf7a2ce78bf7a00db
     # https://github.com/kubernetes/kops/releases/download/v1.18.3/kops-windows-amd64.sha256
     windows-amd64: sha256:36cb615a85a3c48edd7e081f46e0c4be9f46474954b50d0025da4545a13c1a54
+  v1.19.0:
+    # https://github.com/kubernetes/kops/releases/download/v1.19.0/kops-linux-amd64.sha256
+    linux-amd64: sha256:06c9302b652771434e50acd6502de76c96a7dc74756397085927201407ba69d4
+    # https://github.com/kubernetes/kops/releases/download/v1.19.0/kops-darwin-amd64.sha256
+    darwin-amd64: sha256:f0cda3b8cefb061e529d61f5628d604569be397923183366711549158e96e84d
+    # https://github.com/kubernetes/kops/releases/download/v1.19.0/kops-windows-amd64.sha256
+    windows-amd64: sha256:f62d7de0718ca8944f09e7b7ec3c5f7caf54e3f940e7882e3a7002f50f3e02b0

@@ -5,5 +5,6 @@
   tasks:
     - command: /usr/local/bin/kops version
       register: kops_test_output
-    - debug:
+    - name: kops version
+      debug:
         msg: '{{ kops_test_output.stdout }}'
