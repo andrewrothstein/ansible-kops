@@ -1,6 +1,6 @@
 andrewrothstein.kops
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kops.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kops)
+![Build Status](https://github.com/andrewrothstein/ansible-kops/actions/workflows/build.yml/badge.svg)
 
 Installs [kops](https://github.com/kubernetes/kops).
 
