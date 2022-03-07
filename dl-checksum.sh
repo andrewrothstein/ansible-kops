@@ -22,4 +22,4 @@ dl_ver()
     dl $ver windows amd64
 }
 
-dl_ver ${1:-v1.22.4}
+dl_ver ${1:-v1.23.0}
