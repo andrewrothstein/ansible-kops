@@ -1,6 +1,6 @@
 ---
 - name: downloading {{ kops_url }} to {{ kops_install_exe }}
-  become: yes
+  become: true
   become_user: root
   get_url:
     url: '{{ kops_url }}'
@@ -9,7 +9,7 @@
     mode: 0755
 
 - name: linking {{ kops_install_link }} to {{ kops_install_exe }}
-  become: yes
+  become: true
   become_user: root
   file:
     src: '{{ kops_install_exe }}'
