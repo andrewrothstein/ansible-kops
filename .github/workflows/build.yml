@@ -27,8 +27,8 @@ jobs:
         - archlinux_latest
         - debian_bullseye
         - debian_buster
-        - fedora_35
-        - feodra_36
+        - fedora_36
+        - feodra_37
         - rockylinux_8
         - rockylinux_9
         - ubuntu_bionic
