@@ -1,5 +1,7 @@
 ---
 # vars file for kops
+kops_os: '{{ ansible_system | lower }}'
+kops_arch: '{{ kops_arch_map[ansible_architecture] }}'
 kops_platform: '{{ kops_os }}-{{ kops_arch }}'
 kops_url: '{{ kops_mirror }}/{{ kops_ver }}/kops-{{ kops_platform }}'
 kops_checksum: '{{ kops_checksums[kops_ver][kops_platform] }}'
