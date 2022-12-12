@@ -32,5 +32,3 @@ galaxy_info:
         - jammy
   galaxy_tags:
     - development
-
-dependencies: []
