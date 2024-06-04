@@ -1,17 +1,17 @@
 ---
-- name: downloading {{ kops_url }} to {{ kops_install_exe }}
+- name: Downloading {{ kops_url }} to {{ kops_install_exe }}
   become: true
   become_user: root
-  get_url:
+  ansible.builtin.get_url:
     url: '{{ kops_url }}'
     dest: '{{ kops_install_exe }}'
     checksum: '{{ kops_checksum }}'
-    mode: 0755
+    mode: '755'
 
-- name: linking {{ kops_install_link }} to {{ kops_install_exe }}
+- name: Linking {{ kops_install_link }} to {{ kops_install_exe }}
   become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ kops_install_exe }}'
     dest: '{{ kops_install_link }}'
     state: link
