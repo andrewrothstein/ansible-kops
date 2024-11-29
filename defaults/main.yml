@@ -1,6 +1,6 @@
 ---
 # defaults file for kops
-kops_ver: v1.30.0
+kops_ver: v1.30.2
 kops_arch_map:
   aarch64: arm64
   arm64: arm64
@@ -313,3 +313,25 @@ kops_checksums:
     darwin-arm64: sha256:1ad4bdb43c276b5fd00f3837d3b09f2609363fd0c023896acdcf50ff3541de52
     # https://github.com/kubernetes/kops/releases/download/v1.30.0/kops-windows-amd64.sha256
     windows-amd64: sha256:91dfa59629c33ec59ffa2edceb5c17c3dd933ae637e56aba3429e4e52985e964
+  v1.30.1:
+    # https://github.com/kubernetes/kops/releases/download/v1.30.1/kops-linux-amd64.sha256
+    linux-amd64: sha256:aa797aa86803d6e609fda3d99fcecb50ff3f94207335d7aa1e96713b4e1a4df6
+    # https://github.com/kubernetes/kops/releases/download/v1.30.1/kops-linux-arm64.sha256
+    linux-arm64: sha256:ce977c5c46df214abee8ed7ceea1cda010584bdb98585b099bdcb15e3e5fcbfe
+    # https://github.com/kubernetes/kops/releases/download/v1.30.1/kops-darwin-amd64.sha256
+    darwin-amd64: sha256:412f50df27fafa487c9b6f69b0216582ef6dbf101b0b9226e8b3b390d0eb29ee
+    # https://github.com/kubernetes/kops/releases/download/v1.30.1/kops-darwin-arm64.sha256
+    darwin-arm64: sha256:761f2652c9b7388419820d6140e65cd31ed8bcd12d544ba806fb8216ef1dc920
+    # https://github.com/kubernetes/kops/releases/download/v1.30.1/kops-windows-amd64.sha256
+    windows-amd64: sha256:490057287231782cf5b8263302c7000522d4715a4a5a77dced8ea7ca689e7df9
+  v1.30.2:
+    # https://github.com/kubernetes/kops/releases/download/v1.30.2/kops-linux-amd64.sha256
+    linux-amd64: sha256:14050f7d6cb659a5bbba418d10deeb3866efce27b94940a361dff65f59925f2e
+    # https://github.com/kubernetes/kops/releases/download/v1.30.2/kops-linux-arm64.sha256
+    linux-arm64: sha256:cb9c0b35cc91cf35cf2fe04237ebffa82f6e7c952e66b9de33d5a2c78e3319bc
+    # https://github.com/kubernetes/kops/releases/download/v1.30.2/kops-darwin-amd64.sha256
+    darwin-amd64: sha256:37eb7777d4364bf40f0ea60e16d16a725ba9e65178fdc950fcbb589a183862f3
+    # https://github.com/kubernetes/kops/releases/download/v1.30.2/kops-darwin-arm64.sha256
+    darwin-arm64: sha256:b909566f9b892a8a9515627ec9a78e64a1780f2e392feb06c4ec30827309b577
+    # https://github.com/kubernetes/kops/releases/download/v1.30.2/kops-windows-amd64.sha256
+    windows-amd64: sha256:16fc7c7f60ee3c3cfa5be7c5311a83cd7da0282c47166623268db5901b4a587a
